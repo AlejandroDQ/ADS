@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-05-2021 a las 03:49:26
+-- Tiempo de generación: 14-05-2021 a las 20:47:18
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 7.3.27
 
@@ -20,27 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `thanis`
 --
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `thanis`
---
-
-CREATE TABLE `thanis` (
-  `id` int(11) NOT NULL,
-  `nickname` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `password` varchar(20) COLLATE utf8_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
-
---
--- Volcado de datos para la tabla `thanis`
---
-
-INSERT INTO `thanis` (`id`, `nickname`, `password`) VALUES
-(1, 'dallasi', 'ads123'),
-(2, 'lvargas', 'ads123'),
-(3, 'adiaz', 'ads123');
 
 -- --------------------------------------------------------
 
@@ -86,7 +65,8 @@ CREATE TABLE `facturas` (
 --
 
 INSERT INTO `facturas` (`Fecha_de_emisión`, `Tipo`, `Serie_Número`, `Cliente_Receptor`, `Moneda`, `Subtotal`, `IGV`, `Total`, `Estado`) VALUES
-('2021-04-30', 'Factura', 'FFA1-0001', 'Erick Chavez Ururi', 'Soles', 100, 18, 118, 'Emitido');
+('2021-04-30', 'Factura', 'FFA1-0001', 'Erick Chavez Ururi', 'Soles', 100, 18, 118, 'Emitido'),
+('0000-00-00', 'FACTURA', 'FFA1-0002', '', 'SOLES', 100, 18, 118, 'Cancelado');
 
 -- --------------------------------------------------------
 
@@ -152,8 +132,28 @@ CREATE TABLE `talento` (
 --
 
 INSERT INTO `talento` (`NPostulante`, `NConvocatoria`, `Nombres`, `apellidoPaterno`, `apellidoMaterno`, `NivelEstudios`, `Carrera`, `PuestoInteres`, `CV`, `Estado`) VALUES
-(1, 1, 'Fidel', 'Avendaño', 'Romero', 'Universitarios', 'Ingeniería Industrial', 'Gerente General', 'CV Fidel.pdf', 'En proceso'),
-(2, 2, 'Alejandro', 'Diaz', 'Quiroz', 'Universitarios', 'Ingenieria Industrial', 'Gerente General', 'CV Alejandro.pdf', 'En proceso');
+(1, 1, 'Fidel', 'Avendaño', 'Romero', 'Universitarios', 'Ingeniería Industrial', 'Gerente General', 'CV Fidel.pdf', 'En proceso');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `thanis`
+--
+
+CREATE TABLE `thanis` (
+  `id` int(11) NOT NULL,
+  `nickname` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `password` varchar(20) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `thanis`
+--
+
+INSERT INTO `thanis` (`id`, `nickname`, `password`) VALUES
+(1, 'dallasi', 'ads123'),
+(2, 'lvargas', 'ads123'),
+(3, 'adiaz', 'ads123');
 
 -- --------------------------------------------------------
 
