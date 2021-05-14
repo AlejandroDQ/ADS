@@ -1,0 +1,65 @@
+
+
+
+body {
+
+	margin: 0;
+	padding: 0;
+	background: #07FFFB;
+	
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+	
+
+}
+.Registro-box{
+	width: 500px;
+	height: 420px;
+	background: #07FFFB;
+
+	border-radius: 25px;
+
+	color: #0774FF;
+	
+	position: absolute;
+	
+	box-sizing: border-box;
+	
+	
+}
+
+.Registro-box hl {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.Registro-box label {
+	 margin: 0;
+	 padding: 0;
+	 font-weight: bold;
+	 display: block;
+}
+
+.Registro-box input{
+	width: 100%;
+	margin-bottom: 1px;
+}
+
+
+.Registro-box input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #00acb1;
+	border-radius: 1px;
+	color: #0774FF;
+	font-size: 18px;
+	
+}
+
+.titulo{
+	text-align: center;
+}
